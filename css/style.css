@@ -70,8 +70,15 @@ ul.sidebar li a:hover{
     
     
 }
+footer{
+    
+}
 footer span{
+    bottom: 0px;
+    position: fixed;
+    width: 95%;
     margin-top: 20px;
+    margin-right: ;
     padding: 10px;
     display: block;
     background-color: rgb(31, 31, 31);
