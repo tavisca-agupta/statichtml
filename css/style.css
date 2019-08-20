@@ -63,6 +63,7 @@ ul.sidebar li a:hover{
 }
 .home form input{
     display: block;
+    width: 500px;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
