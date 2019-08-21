@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(241, 241, 241);
+    background-color: #E0E0E0;
 }
 h1{
-    background-color: rgb(54, 37, 155);
+    background-color: #C51162;
     color:whitesmoke;
     padding: 10px;
     box-shadow: 3px 3px 3px grey;
@@ -22,10 +22,10 @@ p{
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 290px;
-    width: 15%;
+    height: 100%;
+    width: 150px;
     position: fixed;
-    background-color: #111;
+    background-color: rgb(37, 35, 35);
     box-shadow: 3px 3px 3px grey;
     
 }
@@ -34,51 +34,70 @@ p{
     box-shadow: 5px 5px 5px grey;
     
 }
+
 ul.sidebar li a{
+    color: cornsilk;
     display: block;
     padding: 16px 16px;
     font-family: sans-serif;
     text-align:center;
     text-decoration: none;
-    font-weight: bold;
 }
 
 ul.sidebar li a:hover{
-    background-color: lightgray;
-    color: white;
+    background-color: floralwhite;
+    color: #111;
 }
 .home{
-    display: inline-block;
-    margin-left: 20%;
-    max-width: 600px;
+    margin-left: 160px;
+    max-width: 100%;
     padding: 10px;
-    background-color: lightgoldenrodyellow;
+    background-color: #FFF59D;
     box-shadow: 5px 5px 5px grey;
 }
-.home span{
+
+#add{
     display: block;
-    padding: 5px;
-    color: #111;
-    font-weight: bold;
-}
-.home form input{
-    display: block;
-    width: 500px;
+    width: 100%;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    
+    font-weight: 700;
+    background-color: #CFD8DC;
+}
+
+#todoinput{
+    width: 97%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
     
 }
-footer{
-    
+#list{
+    list-style: none;
+    margin-left: -50px;
 }
-footer span{
+#list li{
+    display: block;
+    margin: 10px;
+}
+#list input{
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+
+}
+.rm{
+    float: right;
+}
+
+footer label{
     bottom: 0px;
     position: fixed;
     width: 95%;
     margin-top: 20px;
-    margin-right: ;
     padding: 10px;
     display: block;
     background-color: rgb(31, 31, 31);
