@@ -74,17 +74,14 @@ function removeItem()
 
 function editItem()
 {
-    let flag=1;
-    if(flag>0)
-    {
-        flag=0;
+    
     //creating ok button
     let okbtn=document.createElement('button');
     okbtn.setAttribute('class','btn');
     
     var okbtntext=document.createTextNode(" ok");
     var okbtnicon=document.createElement('i');
-    okbtnicon.setAttribute('class','fa fa-edit');
+    okbtnicon.setAttribute('class','fas fa-check-circle'); //<i class="fas fa-check-circle"></i>
     okbtn.appendChild(okbtnicon);
     okbtn.appendChild(okbtntext);
 
@@ -108,11 +105,7 @@ function editItem()
 
     okbtn.onclick=okItem;
     
-    }
-    else
-    {
-
-    }
+    
 }
 
 function okItem()
