@@ -13,7 +13,7 @@ function addItem()
     
     if(text==="")
     {
-        input.setAttribute('placeholder','Type Some TODO');
+        input.setAttribute('placeholder','Wake Up And Work');
         //alert("Be Energetic and Make some TODO");
     }
     else
@@ -74,6 +74,10 @@ function removeItem()
 
 function editItem()
 {
+    let flag=1;
+    if(flag>0)
+    {
+        flag=0;
     //creating ok button
     let okbtn=document.createElement('button');
     okbtn.setAttribute('class','btn');
@@ -84,9 +88,11 @@ function editItem()
     okbtn.appendChild(okbtnicon);
     okbtn.appendChild(okbtntext);
 
-    //find out parent and the content
+    //find out parent and the content from label node
     let parent=this.parentNode;
-    let textvalue=parent.childNodes[1].innerHTML;
+    let textvalue=parent.childNodes[1].innerHTML; 
+
+    //creating the inplace input field
     let editableinput=document.createElement('input');
     editableinput.setAttribute('class','edittext');
     editableinput.type='text';
@@ -95,11 +101,18 @@ function editItem()
     //hiding the node ie label and adding ok button
     parent.childNodes[1].classList.add("hidden");
     parent.childNodes[3].classList.add("hidden");
+    //parent.removeChild(parent.childNodes[1]);
     //parent.removeChild(parent.childNodes[3]);
     parent.appendChild(okbtn);
     parent.appendChild(editableinput);
 
     okbtn.onclick=okItem;
+    
+    }
+    else
+    {
+
+    }
 }
 
 function okItem()
@@ -108,11 +121,13 @@ function okItem()
     let okvalue=parent.childNodes[5].value;
     parent.childNodes[1].innerHTML=okvalue;
 
-    parent.childNodes[4].classList.add("hidden");
+    //parent.childNodes[4].classList.add("hidden");
     parent.childNodes[1].classList.remove('hidden');
     parent.childNodes[3].classList.remove("hidden");
+    parent.removeChild(parent.childNodes[4]);
+    parent.removeChild(parent.childNodes[4]);//why same as above ,since after removing the above the 5th becomes 4th element
     
-    console.log(okvalue);
+    //console.log(okvalue);
 }
 
 function done()
