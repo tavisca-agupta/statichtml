@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <h1>TODO LIST</h1>
+        <script src="https://kit.fontawesome.com/c4699f1109.js"></script>
+        <h1><a class="active" href="#"><i class="fas fa-clipboard-check"></i></a> TODO LIST</h1>
     </head>
     <body>
         <div>
             <aside class="navbar">
                 <ul class="sidebar">
-                 <li><a href="#">TODO</a></li> 
-                 <li><a id= "user" href="#">User</a></li>
-                 <li><a href="#">Login</a></li>
+                 <li><a href="#home" ><i class="fas fa-clipboard-list"></i> TODO</a></li> 
+                 <li><a href="#user"><i class="fa fa-user"></i>  User</a></li>
+                 <li><a href="#"><i class="fa fa-lock"></i>  Login</a></li>
                 </ul>
             </aside>
-            <div class="home">
-                <form>
-                    <span>YOUR TODO 1:</span>
-                        <input type="text" />
-                    <span>YOUR TODO 2:</span>
-                        <input type="text" />
-                    <span>YOUR TODO 3:</span>
-                        <input type="text" />
-                    <span>YOUR TODO 4:</span>
-                        <input type="text" />
-                </form>
+
+            <div id="home" class="home">
+                <input type="text" name="" id="todoinput" placeholder="Your TODO here"><br>
+                <button type="button" id="add"><i class="fa fa-plus"> </i> Add </button>
+                <ul id="list">
+                 
+                </ul>
+            </div>
+
+            <div id="user">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veniam laboriosam maiores iusto. Cumque similique nulla nam quibusdam? Tempora, officiis quia? Autem nobis molestiae blanditiis doloremque reprehenderit consequatur sequi natus!
+                </p>
+            </div>
+
+            <div id="login">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, quisquam aliquid eligendi eum, hic sequi sed dolorem repudiandae et corporis, ex sapiente? Illo officia, blanditiis laboriosam qui aut non tempora.</p>
             </div>
         </div>
         
     </body>
     <footer>
-        <span>© 2019 TodoList. All rights reserved.</span>
+        <label>© 2019 TodoList. All rights reserved.</label>
     </footer>
+    <script src="js/todo.js"></script>
 </html>
